@@ -1,0 +1,119 @@
+/*
+ A2Zeta Creative Design Portfolio Website Theme Styles
+ 1: Global Styles
+ 1.1: Layout
+ 1.2: Colors
+ 2: Element Styles
+*/
+
+/******************************
+1 Global Styles
+******************************/
+header {
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 1.1: Layout */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+grid {
+  display: grid;
+}
+
+card {
+  max-width: 20%;
+}
+
+/* .flex {
+  display: flexbox;
+} */
+
+/* 1.2: Colors */
+button {
+  border: none;
+  border-radius: 16px 4px;
+  padding: 1em;
+  margin: 1em 0;
+  background-color: teal;
+  color: white;
+
+}
+
+.btn-transparent {
+  background-color: rgba(0, 0, 0, 0.0);
+  border: 2px solid teal;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-pop {
+  text-shadow: #000 -1px 1px 1px;
+}
+
+/* .transparent {
+  background-color: rgba(0, 0, 0, 0);
+} */
+
+
+/******************************
+2 Element Styles
+******************************/
+header#homepage {
+  background: 
+    /* top, transparent teal, with gradient */ 
+    linear-gradient(
+      rgba(255, 255, 255, 0.0), 
+      rgba(0, 100, 80, 1.0)
+    ),
+    url(../imgs/hero1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.main-nav {
+  margin: 0;
+}
+
+#homepage_hero {
+  min-height: 70%;
+  
+}
+
+.hello {
+  background:teal;
+  padding: 7px 9px;
+  font-size: 13px;
+  color:#fff;
+  display: inline-block;
+  border-radius: 3px;
+  font-weight: bold;
+  position: relative;
+  line-height: 1;
+}
+
+.hello::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background: teal;
+  position: absolute;
+  left: 15px;
+  bottom: -5px;
+  transform: rotate(45deg);
+
+}
+
+.lead-text-wrapper {
+  max-width: 600px;
+}
